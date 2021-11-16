@@ -5,179 +5,205 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="scss/index.css" rel="stylesheet">
-    <title>Document</title>git
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="header_top">
-            <div class="header_left">
-                <h1>로고</h1>
+        <div class="header">
+            <div class="header--left">
+                <h1><a>로고</a></h1>
                 <div>
                     <h2>[Sample] Google Anlytics Marketing Website 사본</h2>
-                    <ul>
-                        <li>파일</li>
-                        <li>수정</li>
-                        <li>포기</li>
-                        <li>삽입</li>
-                        <li>페이지</li>
-                        <li>정렬</li>
-                        <li>리소스</li>
-                        <li>도움말</li>
+                    <ul class="header--left__gnb">
+                        <li class="header--left__gnb__item"><button>파일</button></li>
+                        <li class="header--left__gnb__item"><button>수정</button></li>
+                        <li class="header--left__gnb__item"><button>포기</button></li>
+                        <li class="header--left__gnb__item"><button>삽입</button></li>
+                        <li class="header--left__gnb__item"><button>페이지</button></li>
+                        <li class="header--left__gnb__item"><button>정렬</button></li>
+                        <li class="header--left__gnb__item"><button>리소스</button></li>
+                        <li  class="header--left__gnb__item"><button>도움말</button></li>
                     </ul>
                 </div>
             </div>
-            <div class="header_right">
-                <div class="circle"></div>
-                <div class="square undo">
-                    <p class="icons">
+            <div class="haeder--right">
+                <button class="haeder--right__circle"></button>
+                <button class="haeder--right__square undo">
+                    <p class="header--right__icon">
                         <img src="img/undo.png" alt="">
                     </p>                    
                     재설정
-                </div>
-                <div class="square share">
-                    <p class="icons">
+                </button>
+                <button class="haeder--right__square share">
+                    <p class="header--right__icon">
                         <img src="img/user.png" alt="">
                     </p>
                     공유
-                    <p class="option">
+                    <p class="header--right__dropdown">
                         <img src="img/down.png" alt="">
                     </p>
-                </div>
-                <div class="square vision">
-                    <p class="icons">
+                </button>
+                <button class="haeder--right__square vision">
+                    <p class="header--right__icon">
                         <img src="img/vision.png" alt="">
                     </p>
                     보기
-                </div>
-                <div class="circle">
-                    <span class="dots"></span>
-                    <span class="dots"></span>
-                    <span class="dots"></span>
-                </div>
-                <div class="line"></div>
-                <div class="question">
+                </button>
+                <button class="haeder--right__circle">
+                    <span class="haeder--right__circle__ots"></span>
+                    <span class="haeder--right__circle__dots"></span>
+                    <span class="haeder--right__circle__dots"></span>
+                </button>
+                <div class="header--right__line"></div>
+                <button class="header--right__question">
                     <img src="img/question.png" alt="">
-                </div>
-                <div class="squares">
+                </button>
+                <button class="header--right__squares">
                     <img src="img/squares.png" alt="">
-                </div>                         
-                <div class="circle"></div>
+                </button>                         
+                <button class="haeder--right__circle""></button>
             </div>
         </div>         
-        <div class="tools">
-            <ul>
-                <li>
-                    <p class="icons">
-                        <img src="img/undo.png" alt="">
-                    </p>                    
+        <div class="header--sub">
+            <ul class="header--sub__lnb">
+                <li class="header--sub__item">
+                    <button class="disabled">
+                        <p class="header--sub__icon">
+                            <img src="img/undo.png" alt="">
+                        </p>                    
+                    </button>                    
                 </li>
-                <li>
-                    <p class="icons reverse">
-                        <img src="img/undo.png" alt="">
-                    </p>                    
+                <li class="header--sub__item">
+                    <button class="disabled">
+                        <p class="header--sub__icon header--sub__icon_reverse">
+                            <img src="img/undo.png" alt="">
+                        </p>                             
+                    </button>               
                 </li>
-                <li>
-                    <span class="line"></span>
+                <li class="header--sub__item">
+                    <span class="header--sub__line"></span>
                 </li>
-                <li class="active">
-                    <p class="icons">
-                        <img src="img/cursor.png" alt="">
-                    </p>                    
+                <li class="header--sub__item">
+                    <button>
+                        <p class="header--sub__icon">
+                            <img src="img/cursor.png" alt="">
+                        </p>                                 
+                    </button>           
                 </li>                
-                <li>
-                    <span class="line"></span>
+                <li class="header--sub__item">
+                    <span class="header--sub__line"></span>
                 </li>
-                <li>
-                    <p class="icons">
-                        <img src="img/page.png" alt="">
-                    </p> 
-                    Add page                   
+                <li class="header--sub__item">
+                    <button>                        
+                        <p class="header--sub__icon">
+                            <img src="img/page.png" alt="">
+                        </p> 
+                        Add page         
+                    </button>          
                 </li>
-                <li>
-                    <span class="line"></span>
+                <li class="header--sub__item">
+                    <span class="header--sub__line"></span>
                 </li>
-                <li>
-                    <p class="icons">
-                        <img src="img/database.png" alt="">
-                    </p>      
-                    데이터 추가              
+                <li class="header--sub__item">
+                    <button>                        
+                        <p class="header--sub__icon">
+                            <img src="img/database.png" alt="">
+                        </p>      
+                        데이터 추가              
+                    </button>
                 </li>
-                <li>
-                    <span class="line"></span>
+                <li class="header--sub__item">
+                    <span class="header--sub__line"></span>
                 </li>
-                <li>
-                    <p class="icons">
-                        <img src="img/chart.png" alt="">
-                    </p>
-                    차트 추가
-                    <p class="option">
-                        <img src="img/down.png" alt="">
-                    </p>
+                <li class="header--sub__item">
+                    <button>                        
+                        <p class="header--sub__icon">
+                            <img src="img/chart.png" alt="">
+                        </p>
+                        차트 추가
+                        <p class="header--sub__dropdown">
+                            <img src="img/down.png" alt="">
+                        </p>                        
+                    </button>
                 </li>                
-                <li>
-                    <p class="icons">
-                        <img src="img/line.png" alt="">
-                    </p>
-                    <p class="option">
-                        <img src="img/down.png" alt="">
-                    </p>
+                <li class="header--sub__item">
+                    <button>
+                        <p class="header--sub__icon">
+                            <img src="img/line.png" alt="">
+                        </p>
+                        <p class="header--sub__dropdown">
+                            <img src="img/down.png" alt="">
+                        </p>                        
+                    </button>
                 </li>
-                <li>
-                    <span class="line"></span>
+                <li class="header--sub__item">
+                    <span class="header--sub__line"></span>
                 </li>
-                <li>
-                    <p class="icons">
-                        <img src="img/settings.png" alt="">
-                    </p>
-                    컨트롤 추가
-                    <p class="option">
-                        <img src="img/down.png" alt="">
-                    </p>
+                <li class="header--sub__item">
+                    <button>                        
+                        <p class="header--sub__icon">
+                            <img src="img/settings.png" alt="">
+                        </p>
+                        컨트롤 추가
+                        <p class="header--sub__dropdown">
+                            <img src="img/down.png" alt="">
+                        </p>
+                    </button>
                 </li>
-                <li>
-                    <span class="line"></span>
+                <li class="header--sub__item">
+                    <span class="header--sub__line"></span>
                 </li>
-                <li>
-                    <p class="icons next reverse">
-                        <img src="img/next.png" alt="">
-                    </p>
-                    <p class="icons next">
-                        <img src="img/next.png" alt="">
-                    </p>
+                <li class="header--sub__item">
+                    <button>
+                        <p class="header--sub__icon header--sub__icon_reverse">
+                            <img src="img/next.png" alt="">
+                        </p>
+                        <p class="header--sub__icon">
+                            <img src="img/next.png" alt="">
+                        </p>                        
+                    </button>
                 </li>                
-                <li>
-                    <p class="icons">
-                        <img src="img/image.png" alt="">
-                    </p>
-                    <p class="option">
-                        <img src="img/down.png" alt="">
-                    </p>
+                <li class="header--sub__item">
+                    <button>
+                        <p class="header--sub__icon">
+                            <img src="img/image.png" alt="">
+                        </p>
+                        <p class="header--sub__dropdown">
+                            <img src="img/down.png" alt="">
+                        </p>                        
+                    </button>
                 </li>
-                <li>
-                    <p class="icons">
-                        <img src="img/text.png" alt="">
-                    </p>
+                <li class="header--sub__item">
+                    <button>
+                        <p class="header--sub__icon">
+                            <img src="img/text.png" alt="">
+                        </p>                        
+                    </button>
                 </li>
-                <li>
-                    <p class="icons lines">
-                        <img src="img/line.png" alt="">
-                    </p>
-                    <p class="option">
-                        <img src="img/down.png" alt="">
-                    </p>
+                <li class="header--sub__item">
+                    <button>
+                        <p class="header--sub__icon header--sub__lines">
+                            <img src="img/line.png" alt="">
+                        </p>
+                        <p class="header--sub__dropdown">
+                            <img src="img/down.png" alt="">
+                        </p>                        
+                    </button>
                 </li>
-                <li>
-                    <p class="icons">
-                        <img src="img/shapes.png" alt="">
-                    </p>
-                    <p class="option">
-                        <img src="img/down.png" alt="">
-                    </p>
+                <li class="header--sub__item">
+                    <button>
+                        <p class="header--sub__icon">
+                            <img src="img/shapes.png" alt="">
+                        </p>
+                        <p class="header--sub__dropdown">
+                            <img src="img/down.png" alt="">
+                        </p>                        
+                    </button>
                 </li>
-                <li>
-                    <span class="line"></span>
+                <li class="header--sub__item">
+                    <span class="header--sub__line"></span>
                 </li>
-                <li>테마 및 레이아웃</li>
+                <li class="header--sub__item"><button>테마 및 레이아웃</button></li>
             </ul>
         </div>   
     </header>
@@ -185,11 +211,11 @@
         <section class="section_left">
             <div class="blank">IMG</div>
         </section>
-        <section class="section_right">
+        <section class="section--right">
             <h3>테마 및 레이아웃</h3>
             <ul class="section_option">
-                <li>테마</li>
-                <li class="selected">레이아웃</li>
+                <li><button>테마</button></li>
+                <li class="selected"><button>레이아웃</button></li>
             </ul>
             <div class=" sectionbox viewmode">
                 <span>보기모드</span>

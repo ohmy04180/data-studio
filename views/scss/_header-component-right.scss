@@ -1,0 +1,66 @@
+.haeder--right {
+  button {
+    @include headerRightStyle(none);
+    font-size: 4px;
+  }
+  .haeder--right__circle {
+    border-radius: 100%;
+    @include btnStyle(#ddd, none);
+  }
+  .haeder--right__circle__dots {
+    margin: 1px 0;
+    width: 2px;
+    height: 2px;
+    background-color: cornflowerblue;
+  }
+  .haeder--right__square {
+    @include btnStyle(none, $border-eee);
+    border-radius: 3px;
+  }
+  .haeder--right__square .header--right__icon {
+    margin-right: 5px;
+  }
+  .haeder--right__square .header--right__icon img {
+    width: 100%;
+  }
+  .undo {
+    @include inactive;
+  }
+  .share {
+    color: cornflowerblue;
+    padding-left: 5px;
+  }
+  .share .header--right__dropdown {
+    border-left: $border-eee;
+    padding-left: 2px;
+    margin-left: 8px;
+  }
+  .share .header--right__dropdown img {
+    width: 80%;
+  }
+  .vision {
+    background-color: cornflowerblue;
+    color: #fff;
+  }
+  .header--right__line {
+    @include headerRightStyle(#eee);
+    width: 1px;
+    height: 25px;
+    opacity: 1;
+  }
+  .header--right__question {
+    @include btnStyle(none, none);
+    border-radius: 100%;
+    img {
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+  .header--right__squares {
+    @include btnStyle(none, none);
+    img {
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+}

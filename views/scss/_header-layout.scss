@@ -1,0 +1,82 @@
+header {
+  .header {
+    @include flex(space-between, center);
+  }
+  .header--left {
+    @include flex(flex-start, center);
+    h1 {
+      width: 25px;
+      height: 25px;
+    }
+    div {
+      .header--left__gnb {
+        @include flex(flex-start, center);
+      }
+    }
+  }
+  .haeder--right {
+    @include flex(flex-end, center);
+    .haeder--right__circle {
+      width: 25px;
+      height: 25px;
+      @include flex(center, center);
+      flex-direction: column;
+    }
+    .haeder--right__square {
+      width: 60px;
+      height: 25px;
+    }
+    .haeder--right__square .header--right__icon {
+      width: 10px;
+      height: 10px;
+    }
+    .undo {
+      @include flex(center, center);
+    }
+    .share {
+      @include flex(center, center);
+      width: 65px;
+    }
+    .share .header--right__dropdown {
+      width: 10px;
+      height: 25px;
+      @include flex(center, center);
+    }
+    .vision {
+      @include flex(center, center);
+    }
+    .header--right__question {
+      width: 20px;
+      height: 20px;
+    }
+    .header--right__squares {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .header--sub {
+    .header--sub__lnb {
+      @include flex(flex-start, center);
+      .header--sub__item {
+        @include flex(flex-start, center);
+      }
+      .header--sub__item button {
+        @include flex(flex-start, center);
+      }
+      .header--sub__icon {
+        width: 17px;
+        height: 17px;
+        @include flex(center, center);
+      }
+      .header--sub__line {
+        width: 1px;
+        height: 15px;
+      }
+      .header--sub__dropdown {
+        width: 6px;
+        height: 15px;
+        @include flex(center, center);
+      }
+    }
+  }
+}

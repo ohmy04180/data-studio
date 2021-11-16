@@ -1,0 +1,46 @@
+.header--sub {
+  border-top: $border-eee;
+  border-bottom: 2px solid #ddd;
+  .header--sub__lnb {
+    .header--sub__item {
+      margin: 4px;
+      font-size: 4px;
+      color: #777;
+    }
+    .header--sub__item button {
+      padding: 1px;
+      border-radius: 2px;
+      @include btnStyle(none, none);
+      &:hover {
+        background: $hoverStyle;
+      }
+      &.disabled {
+        @include inactive;
+      }
+    }
+    .header--sub__item .disable {
+      opacity: 0.5;
+    }
+    .header--sub__icon {
+      padding: 3px;
+      border-radius: 2px;
+    }
+    .header--sub__icon.header--sub__icon_reverse {
+      transform: rotateY(180deg) scaleY(-1);
+    }
+    .header--sub__icon img {
+      vertical-align: top;
+      width: 100%;
+    }
+    .header--sub__line {
+      background-color: #ddd;
+    }
+    .header--sub__dropdown {
+      margin-left: 2px;
+      padding-right: 2px;
+    }
+    .header--sub__dropdown img {
+      width: 100%;
+    }
+  }
+}

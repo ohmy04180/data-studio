@@ -1,0 +1,133 @@
+.header--left {
+  h1 {
+    background-color: cornflowerblue;
+    font-size: 0;
+  }
+  div {
+    margin-left: 10px;
+    h2 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .header--left__gnb .header--left__gnb__item {
+      font-size: 8px;
+      margin-right: 10px;
+      padding: 3px 0;
+    }
+    .header--left__gnb .header--left__gnb__item button {
+      @include btnStyle(none, none);
+    }
+  }
+}
+.haeder--right {
+  button {
+    @include headerRightStyle(none);
+    font-size: 4px;
+  }
+  .haeder--right__circle {
+    border-radius: 100%;
+    @include btnStyle(#ddd, none);
+  }
+  .haeder--right__circle__dots {
+    margin: 1px 0;
+    width: 2px;
+    height: 2px;
+    background-color: cornflowerblue;
+  }
+  .haeder--right__square {
+    @include btnStyle(none, $border-eee);
+    border-radius: 3px;
+  }
+  .haeder--right__square .header--right__icon {
+    margin-right: 5px;
+  }
+  .haeder--right__square .header--right__icon img {
+    width: 100%;
+  }
+  .undo {
+    @include inactive;
+  }
+  .share {
+    color: cornflowerblue;
+    padding-left: 5px;
+  }
+  .share .header--right__dropdown {
+    border-left: $border-eee;
+    padding-left: 2px;
+    margin-left: 8px;
+  }
+  .share .header--right__dropdown img {
+    width: 80%;
+  }
+  .vision {
+    background-color: cornflowerblue;
+    color: #fff;
+  }
+  .header--right__line {
+    @include headerRightStyle(#eee);
+    width: 1px;
+    height: 25px;
+    opacity: 1;
+  }
+  .header--right__question {
+    @include btnStyle(none, none);
+    border-radius: 100%;
+    img {
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+  .header--right__squares {
+    @include btnStyle(none, none);
+    img {
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+}
+.header--sub {
+  border-top: $border-eee;
+  border-bottom: 2px solid #ddd;
+  .header--sub__lnb {
+    .header--sub__item {
+      margin: 4px;
+      font-size: 4px;
+      color: #777;
+    }
+    .header--sub__item button {
+      padding: 1px;
+      border-radius: 2px;
+      @include btnStyle(none, none);
+      &:hover {
+        background: $hoverStyle;
+      }
+    }
+    .header--sub__item .disable {
+      opacity: 0.5;
+    }
+    .icons {
+      padding: 3px;
+      border-radius: 2px;
+    }
+    .icons.reverse {
+      transform: rotateY(180deg) scaleY(-1);
+    }
+    .icons img {
+      vertical-align: top;
+      width: 100%;
+    }
+    .line {
+      background-color: #eee;
+    }
+    .next img {
+      width: 70%;
+    }
+    .option {
+      margin-left: 2px;
+      padding-right: 2px;
+    }
+    .option img {
+      width: 100%;
+    }
+  }
+}
