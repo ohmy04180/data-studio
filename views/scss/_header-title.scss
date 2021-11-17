@@ -1,0 +1,59 @@
+.header-title {
+  .header__logo {
+    background-color: cornflowerblue;
+    font-size: 0;
+  }
+  .header__menu {
+    margin-left: 10px;
+    .header__title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .gnb .gnb__item {
+      font-size: 8px;
+      margin-right: 10px;
+      padding: 3px 0;
+      position: relative;
+    }
+    .gnb__item button {
+      @include btnStyle(none, none);
+      &:hover + .gnb__item__sub {
+        display: block;
+      }
+    }
+    .gnb__item .gnb__item__sub {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: 1;
+      background-color: #fff;
+      border: $border-eee;
+      box-shadow: 1px 1px 3px 0 #ddd;
+      width: max-content;
+      display: none;
+    }
+    .gnb__item .gnb__item__sub .gnb__item__sub__list {
+      @include flex(space-between, center);
+      padding: 2px;
+      .gnb__item__sub__list__icon {
+        width: 28px;
+        height: 28px;
+        padding: 10px;
+      }
+      .gnb__item__sub__list__icon img {
+        width: 100%;
+      }
+      .gnb__item__sub__list__text {
+        font-size: 12px;
+        width: 100%;
+        text-align: left;
+      }
+      &.gnb__item__sub__list--underline {
+        border-bottom: $border-eee;
+      }
+      &:hover {
+        background-color: rgba($color: #eee, $alpha: 0.5);
+      }
+    }
+  }
+}

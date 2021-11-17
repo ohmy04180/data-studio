@@ -2,77 +2,77 @@ header {
   .header {
     @include flex(space-between, center);
   }
-  .header--left {
+  .header-title {
     @include flex(flex-start, center);
-    h1 {
+    .header__logo {
       width: 25px;
       height: 25px;
     }
-    div {
-      .header--left__gnb {
+    .header__menu {
+      .gnb {
         @include flex(flex-start, center);
       }
     }
   }
-  .haeder--right {
+  .haeder-action {
     @include flex(flex-end, center);
-    .haeder--right__circle {
+    .haeder-action__circle {
       width: 25px;
       height: 25px;
       @include flex(center, center);
       flex-direction: column;
     }
-    .haeder--right__square {
+    .haeder-action__square {
       width: 60px;
       height: 25px;
     }
-    .haeder--right__square .header--right__icon {
+    .haeder-action__square .haeder-action__icon {
       width: 10px;
       height: 10px;
     }
-    .undo {
+    .haeder-action__undo {
       @include flex(center, center);
     }
-    .share {
+    .haeder-action__share {
       @include flex(center, center);
       width: 65px;
     }
-    .share .header--right__dropdown {
+    .haeder-action__share .haeder-action__dropdown {
       width: 10px;
       height: 25px;
       @include flex(center, center);
     }
-    .vision {
+    .haeder-action__vision {
       @include flex(center, center);
     }
-    .header--right__question {
+    .haeder-action__question {
       width: 20px;
       height: 20px;
     }
-    .header--right__squares {
+    .haeder-action__more {
       width: 14px;
       height: 14px;
     }
   }
-  .header--sub {
-    .header--sub__lnb {
+  .header-tools {
+    .lnb {
       @include flex(flex-start, center);
-      .header--sub__item {
+      .lnb__item {
         @include flex(flex-start, center);
       }
-      .header--sub__item button {
+      .lnb__item button {
         @include flex(flex-start, center);
       }
-      .header--sub__icon {
+      .lnb__icon {
         width: 17px;
         height: 17px;
         @include flex(center, center);
       }
-      .header--sub__line {
+      .lnb__line {
         width: 1px;
         height: 15px;
       }
-      .header--sub__dropdown {
+      .lnb__dropdown {
         width: 6px;
         height: 15px;
         @include flex(center, center);

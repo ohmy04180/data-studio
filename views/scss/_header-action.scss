@@ -1,54 +1,54 @@
-.haeder--right {
+.haeder-action {
   button {
     @include headerRightStyle(none);
     font-size: 4px;
   }
-  .haeder--right__circle {
+  .haeder-action__circle {
     border-radius: 100%;
     @include btnStyle(#ddd, none);
   }
-  .haeder--right__circle__dots {
+  .haeder-action__circle__dots {
     margin: 1px 0;
     width: 2px;
     height: 2px;
     background-color: cornflowerblue;
   }
-  .haeder--right__square {
+  .haeder-action__square {
     @include btnStyle(none, $border-eee);
     border-radius: 3px;
   }
-  .haeder--right__square .header--right__icon {
+  .haeder-action__square .haeder-action__icon {
     margin-right: 5px;
   }
-  .haeder--right__square .header--right__icon img {
+  .haeder-action__square .haeder-action__icon img {
     width: 100%;
   }
-  .undo {
+  .haeder-action__undo {
     @include inactive;
   }
-  .share {
+  .haeder-action__share {
     color: cornflowerblue;
     padding-left: 5px;
   }
-  .share .header--right__dropdown {
+  .haeder-action__share .haeder-action__dropdown {
     border-left: $border-eee;
     padding-left: 2px;
     margin-left: 8px;
   }
-  .share .header--right__dropdown img {
+  .haeder-action__share .haeder-action__dropdown img {
     width: 80%;
   }
-  .vision {
+  .haeder-action__vision {
     background-color: cornflowerblue;
     color: #fff;
   }
-  .header--right__line {
+  .haeder-action__line {
     @include headerRightStyle(#eee);
     width: 1px;
     height: 25px;
     opacity: 1;
   }
-  .header--right__question {
+  .haeder-action__question {
     @include btnStyle(none, none);
     border-radius: 100%;
     img {
@@ -56,7 +56,7 @@
       opacity: 0.5;
     }
   }
-  .header--right__squares {
+  .haeder-action__more {
     @include btnStyle(none, none);
     img {
       width: 100%;

@@ -18,6 +18,10 @@ div {
   letter-spacing: -0.5px;
 }
 
+img {
+  vertical-align: top;
+}
+
 header .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +34,7 @@ header .header {
           align-items: center;
 }
 
-header .header--left {
+header .header-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,12 +46,12 @@ header .header--left {
           align-items: center;
 }
 
-header .header--left h1 {
+header .header-title .header__logo {
   width: 25px;
   height: 25px;
 }
 
-header .header--left div .header--left__gnb {
+header .header-title .header__menu .gnb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +63,7 @@ header .header--left div .header--left__gnb {
           align-items: center;
 }
 
-header .haeder--right {
+header .haeder-action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +75,7 @@ header .haeder--right {
           align-items: center;
 }
 
-header .haeder--right .haeder--right__circle {
+header .haeder-action .haeder-action__circle {
   width: 25px;
   height: 25px;
   display: -webkit-box;
@@ -89,17 +93,17 @@ header .haeder--right .haeder--right__circle {
           flex-direction: column;
 }
 
-header .haeder--right .haeder--right__square {
+header .haeder-action .haeder-action__square {
   width: 60px;
   height: 25px;
 }
 
-header .haeder--right .haeder--right__square .header--right__icon {
+header .haeder-action .haeder-action__square .haeder-action__icon {
   width: 10px;
   height: 10px;
 }
 
-header .haeder--right .undo {
+header .haeder-action .haeder-action__undo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +115,7 @@ header .haeder--right .undo {
           align-items: center;
 }
 
-header .haeder--right .share {
+header .haeder-action .haeder-action__share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +128,7 @@ header .haeder--right .share {
   width: 65px;
 }
 
-header .haeder--right .share .header--right__dropdown {
+header .haeder-action .haeder-action__share .haeder-action__dropdown {
   width: 10px;
   height: 25px;
   display: -webkit-box;
@@ -138,7 +142,7 @@ header .haeder--right .share .header--right__dropdown {
           align-items: center;
 }
 
-header .haeder--right .vision {
+header .haeder-action .haeder-action__vision {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,17 +154,17 @@ header .haeder--right .vision {
           align-items: center;
 }
 
-header .haeder--right .header--right__question {
+header .haeder-action .haeder-action__question {
   width: 20px;
   height: 20px;
 }
 
-header .haeder--right .header--right__squares {
+header .haeder-action .haeder-action__more {
   width: 14px;
   height: 14px;
 }
 
-header .header--sub .header--sub__lnb {
+header .header-tools .lnb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +176,7 @@ header .header--sub .header--sub__lnb {
           align-items: center;
 }
 
-header .header--sub .header--sub__lnb .header--sub__item {
+header .header-tools .lnb .lnb__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +188,7 @@ header .header--sub .header--sub__lnb .header--sub__item {
           align-items: center;
 }
 
-header .header--sub .header--sub__lnb .header--sub__item button {
+header .header-tools .lnb .lnb__item button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +200,7 @@ header .header--sub .header--sub__lnb .header--sub__item button {
           align-items: center;
 }
 
-header .header--sub .header--sub__lnb .header--sub__icon {
+header .header-tools .lnb .lnb__icon {
   width: 17px;
   height: 17px;
   display: -webkit-box;
@@ -210,12 +214,12 @@ header .header--sub .header--sub__lnb .header--sub__icon {
           align-items: center;
 }
 
-header .header--sub .header--sub__lnb .header--sub__line {
+header .header-tools .lnb .lnb__line {
   width: 1px;
   height: 15px;
 }
 
-header .header--sub .header--sub__lnb .header--sub__dropdown {
+header .header-tools .lnb .lnb__dropdown {
   width: 6px;
   height: 15px;
   display: -webkit-box;
@@ -229,94 +233,151 @@ header .header--sub .header--sub__lnb .header--sub__dropdown {
           align-items: center;
 }
 
-.header--left h1 {
+.header-title .header__logo {
   background-color: cornflowerblue;
   font-size: 0;
 }
 
-.header--left div {
+.header-title .header__menu {
   margin-left: 10px;
 }
 
-.header--left div h2 {
+.header-title .header__menu .header__title {
   font-size: 16px;
   font-weight: 500;
 }
 
-.header--left div .header--left__gnb .header--left__gnb__item {
+.header-title .header__menu .gnb .gnb__item {
   font-size: 8px;
   margin-right: 10px;
   padding: 3px 0;
+  position: relative;
 }
 
-.header--left div .header--left__gnb .header--left__gnb__item button {
+.header-title .header__menu .gnb__item button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.haeder--right button {
+.header-title .header__menu .gnb__item button:hover + .gnb__item__sub {
+  display: block;
+}
+
+.header-title .header__menu .gnb__item .gnb__item__sub {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 1px 1px 3px 0 #ddd;
+          box-shadow: 1px 1px 3px 0 #ddd;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: none;
+}
+
+.header-title .header__menu .gnb__item .gnb__item__sub .gnb__item__sub__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+}
+
+.header-title .header__menu .gnb__item .gnb__item__sub .gnb__item__sub__list .gnb__item__sub__list__icon {
+  width: 28px;
+  height: 28px;
+  padding: 10px;
+}
+
+.header-title .header__menu .gnb__item .gnb__item__sub .gnb__item__sub__list .gnb__item__sub__list__icon img {
+  width: 100%;
+}
+
+.header-title .header__menu .gnb__item .gnb__item__sub .gnb__item__sub__list .gnb__item__sub__list__text {
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.header-title .header__menu .gnb__item .gnb__item__sub .gnb__item__sub__list.gnb__item__sub__list--underline {
+  border-bottom: 1px solid #eee;
+}
+
+.header-title .header__menu .gnb__item .gnb__item__sub .gnb__item__sub__list:hover {
+  background-color: rgba(238, 238, 238, 0.5);
+}
+
+.haeder-action button {
   margin-right: 10px;
   background: none;
   font-size: 4px;
 }
 
-.haeder--right .haeder--right__circle {
+.haeder-action .haeder-action__circle {
   border-radius: 100%;
   background: #ddd;
   border: none;
   cursor: pointer;
 }
 
-.haeder--right .haeder--right__circle__dots {
+.haeder-action .haeder-action__circle__dots {
   margin: 1px 0;
   width: 2px;
   height: 2px;
   background-color: cornflowerblue;
 }
 
-.haeder--right .haeder--right__square {
+.haeder-action .haeder-action__square {
   background: none;
   border: 1px solid #eee;
   cursor: pointer;
   border-radius: 3px;
 }
 
-.haeder--right .haeder--right__square .header--right__icon {
+.haeder-action .haeder-action__square .haeder-action__icon {
   margin-right: 5px;
 }
 
-.haeder--right .haeder--right__square .header--right__icon img {
+.haeder-action .haeder-action__square .haeder-action__icon img {
   width: 100%;
 }
 
-.haeder--right .undo {
+.haeder-action .haeder-action__undo {
   cursor: Default;
   opacity: 0.5;
   background: none;
 }
 
-.haeder--right .share {
+.haeder-action .haeder-action__share {
   color: cornflowerblue;
   padding-left: 5px;
 }
 
-.haeder--right .share .header--right__dropdown {
+.haeder-action .haeder-action__share .haeder-action__dropdown {
   border-left: 1px solid #eee;
   padding-left: 2px;
   margin-left: 8px;
 }
 
-.haeder--right .share .header--right__dropdown img {
+.haeder-action .haeder-action__share .haeder-action__dropdown img {
   width: 80%;
 }
 
-.haeder--right .vision {
+.haeder-action .haeder-action__vision {
   background-color: cornflowerblue;
   color: #fff;
 }
 
-.haeder--right .header--right__line {
+.haeder-action .haeder-action__line {
   margin-right: 10px;
   background: #eee;
   width: 1px;
@@ -324,87 +385,83 @@ header .header--sub .header--sub__lnb .header--sub__dropdown {
   opacity: 1;
 }
 
-.haeder--right .header--right__question {
+.haeder-action .haeder-action__question {
   background: none;
   border: none;
   cursor: pointer;
   border-radius: 100%;
 }
 
-.haeder--right .header--right__question img {
+.haeder-action .haeder-action__question img {
   width: 100%;
   opacity: 0.5;
 }
 
-.haeder--right .header--right__squares {
+.haeder-action .haeder-action__more {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.haeder--right .header--right__squares img {
+.haeder-action .haeder-action__more img {
   width: 100%;
   opacity: 0.5;
 }
 
-.header--sub {
+.header-tools {
   border-top: 1px solid #eee;
   border-bottom: 2px solid #ddd;
 }
 
-.header--sub .header--sub__lnb .header--sub__item {
+.header-tools .lnb .lnb__item {
   margin: 4px;
-  font-size: 4px;
   color: #777;
 }
 
-.header--sub .header--sub__lnb .header--sub__item button {
+.header-tools .lnb .lnb__item button {
   padding: 1px;
   border-radius: 2px;
+  font-size: 8px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.header--sub .header--sub__lnb .header--sub__item button:hover {
+.header-tools .lnb .lnb__item button:hover {
   background: rgba(100, 149, 237, 0.3);
 }
 
-.header--sub .header--sub__lnb .header--sub__item button.disabled {
+.header-tools .lnb .lnb__item button.lnb__item--disabled {
   cursor: Default;
   opacity: 0.5;
   background: none;
 }
 
-.header--sub .header--sub__lnb .header--sub__item .disable {
-  opacity: 0.5;
-}
-
-.header--sub .header--sub__lnb .header--sub__icon {
+.header-tools .lnb .lnb__icon {
   padding: 3px;
   border-radius: 2px;
 }
 
-.header--sub .header--sub__lnb .header--sub__icon.header--sub__icon_reverse {
+.header-tools .lnb .lnb__icon.lnb__icon--reverse {
   -webkit-transform: rotateY(180deg) scaleY(-1);
           transform: rotateY(180deg) scaleY(-1);
 }
 
-.header--sub .header--sub__lnb .header--sub__icon img {
+.header-tools .lnb .lnb__icon img {
   vertical-align: top;
   width: 100%;
 }
 
-.header--sub .header--sub__lnb .header--sub__line {
+.header-tools .lnb .lnb__line {
   background-color: #ddd;
 }
 
-.header--sub .header--sub__lnb .header--sub__dropdown {
+.header-tools .lnb .lnb__dropdown {
   margin-left: 2px;
   padding-right: 2px;
 }
 
-.header--sub .header--sub__lnb .header--sub__dropdown img {
+.header-tools .lnb .lnb__dropdown img {
   width: 100%;
 }
 
@@ -571,6 +628,10 @@ main .section--right .sizelist .sizelist_wh {
           align-items: center;
 }
 
+main .section--right .sizelist .sizelist_wh li {
+  width: 45%;
+}
+
 main .section--right .sizelist .sizelist_wh li span {
   display: block;
   width: 100%;
@@ -580,16 +641,16 @@ main .section--right .fitting form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 main .section--right .fitting form label {
-  width: 50%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,6 +713,10 @@ main .section--right .gridsetting li span {
   font-size: 8px;
 }
 
+.section_option li {
+  border-bottom: 1px solid #eee;
+}
+
 .section_option li button {
   background: none;
   border: none;
@@ -659,7 +724,6 @@ main .section--right .gridsetting li span {
   padding: 10px 0;
   font-size: 8px;
   text-align: center;
-  border-bottom: 1px solid #eee;
 }
 
 .section_option li.selected {
@@ -731,6 +795,7 @@ main .section--right .gridsetting li span {
 .sizelist .sizelist_wh li {
   font-size: 6px;
   color: #777;
+  margin-top: 8px;
 }
 
 .sizelist .sizelist_wh li span {
@@ -763,7 +828,7 @@ main .section--right .gridsetting li span {
 }
 
 .fitting form label {
-  width: 50%;
+  width: 45%;
   font-size: 6px;
   color: #777;
 }

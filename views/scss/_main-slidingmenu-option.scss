@@ -1,10 +1,12 @@
 .section_option {
+  li {
+    border-bottom: $border-eee;
+  }
   li button {
     @include btnStyle(none, none);
     padding: 10px 0;
     font-size: 8px;
     text-align: center;
-    border-bottom: $border-eee;
   }
   li.selected {
     color: cornflowerblue;
