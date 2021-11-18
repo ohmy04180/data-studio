@@ -3,52 +3,48 @@
     @include headerRightStyle(none);
     font-size: 4px;
   }
-  .haeder-action__circle {
+  .haeder-action--circle {
     border-radius: 100%;
     @include btnStyle(#ddd, none);
   }
-  .haeder-action__circle__dots {
+  .haeder-action--dots {
     margin: 1px 0;
     width: 2px;
     height: 2px;
     background-color: cornflowerblue;
   }
-  .haeder-action__square {
+  .haeder-action--square {
     @include btnStyle(none, $border-eee);
     border-radius: 3px;
   }
-  .haeder-action__square .haeder-action__icon {
+  .haeder-action--square .haeder-action--icon {
     margin-right: 5px;
   }
-  .haeder-action__square .haeder-action__icon img {
+  .haeder-action--square .haeder-action--icon img {
     width: 100%;
   }
-  .haeder-action__undo {
-    @include inactive;
+  .haeder-action--undo {
+    @include inactive(none);
   }
-  .haeder-action__share {
+  .haeder-action--share {
     color: cornflowerblue;
     padding-left: 5px;
   }
-  .haeder-action__share .haeder-action__dropdown {
+  .haeder-action--share .haeder-action--dropdown {
     border-left: $border-eee;
     padding-left: 2px;
     margin-left: 8px;
   }
-  .haeder-action__share .haeder-action__dropdown img {
+  .haeder-action--share .haeder-action--dropdown img {
     width: 80%;
   }
-  .haeder-action__vision {
+  .haeder-action--vision {
     background-color: cornflowerblue;
     color: #fff;
   }
-  .haeder-action__line {
-    @include headerRightStyle(#eee);
-    width: 1px;
-    height: 25px;
-    opacity: 1;
+  .haeder-action--line {
   }
-  .haeder-action__question {
+  .haeder-action--question {
     @include btnStyle(none, none);
     border-radius: 100%;
     img {
@@ -56,11 +52,23 @@
       opacity: 0.5;
     }
   }
-  .haeder-action__more {
+  .haeder-action--more {
     @include btnStyle(none, none);
     img {
       width: 100%;
       opacity: 0.5;
     }
+  }
+  .sideline {
+    @include flex(flex-start, center);
+  }
+  .sideline::before {
+    content: "";
+    display: block;
+    clear: both;
+    @include headerRightStyle(#eee);
+    width: 1px;
+    height: 25px;
+    opacity: 1;
   }
 }

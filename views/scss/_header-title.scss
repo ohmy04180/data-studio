@@ -6,22 +6,23 @@
   .header__menu {
     margin-left: 10px;
     .header__title {
+      padding-left: 5px;
       font-size: 16px;
       font-weight: 500;
     }
-    .gnb .gnb__item {
+    .gnb .gnb__list {
       font-size: 8px;
-      margin-right: 10px;
-      padding: 3px 0;
+      // margin-right: 10px;
       position: relative;
     }
-    .gnb__item button {
+    .gnb__list button {
+      padding: 3px 5px;
       @include btnStyle(none, none);
-      &:hover + .gnb__item__sub {
-        display: block;
-      }
     }
-    .gnb__item .gnb__item__sub {
+    .gnb__list--open {
+      display: block;
+    }
+    .gnb__list .gnb-sub {
       position: absolute;
       left: 0;
       top: 100%;
@@ -32,23 +33,23 @@
       width: max-content;
       display: none;
     }
-    .gnb__item .gnb__item__sub .gnb__item__sub__list {
+    .gnb__list .gnb-sub .gnb-sub__dropdown {
       @include flex(space-between, center);
       padding: 2px;
-      .gnb__item__sub__list__icon {
+      .gnb-sub__dropdown--icon {
         width: 28px;
         height: 28px;
         padding: 10px;
       }
-      .gnb__item__sub__list__icon img {
+      .gnb-sub__dropdown--icon img {
         width: 100%;
       }
-      .gnb__item__sub__list__text {
+      .gnb-sub__dropdown--text {
         font-size: 12px;
         width: 100%;
         text-align: left;
       }
-      &.gnb__item__sub__list--underline {
+      &.underline {
         border-bottom: $border-eee;
       }
       &:hover {

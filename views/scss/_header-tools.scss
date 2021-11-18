@@ -2,43 +2,49 @@
   border-top: $border-eee;
   border-bottom: 2px solid #ddd;
   .lnb {
-    .lnb__item {
-      margin: 4px;
+    .lnb__list {
+      margin: 4px 0;
       color: #777;
+      &::after {
+        content: "";
+        clear: both;
+        display: block;
+        width: 1px;
+        height: 15px;
+        background-color: #ddd;
+      }
+      &:nth-last-of-type(1)::after {
+        display: none;
+      }
     }
-    .lnb__item button {
-      padding: 1px;
+    .lnb__list button {
+      padding: 1px 4px;
+      margin: 0 2px;
       border-radius: 2px;
       font-size: 8px;
       @include btnStyle(none, none);
       &:hover {
         background: $hoverStyle;
       }
-      &.lnb__item--disabled {
-        @include inactive;
-      }
     }
-    .lnb__icon {
+    .lnb__list--icon {
       padding: 3px;
       border-radius: 2px;
     }
-    .lnb__icon {
-      &.lnb__icon--reverse {
+    .lnb__list--icon {
+      &.lnb__list--reverse {
         transform: rotateY(180deg) scaleY(-1);
       }
     }
-    .lnb__icon img {
+    .lnb__list--icon img {
       vertical-align: top;
       width: 100%;
     }
-    .lnb__line {
-      background-color: #ddd;
-    }
-    .lnb__dropdown {
+    .lnb__list--dropdown {
       margin-left: 2px;
       padding-right: 2px;
     }
-    .lnb__dropdown img {
+    .lnb__list--dropdown img {
       width: 100%;
     }
   }

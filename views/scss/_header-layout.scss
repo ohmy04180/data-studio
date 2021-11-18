@@ -16,40 +16,40 @@ header {
   }
   .haeder-action {
     @include flex(flex-end, center);
-    .haeder-action__circle {
+    .haeder-action--circle {
       width: 25px;
       height: 25px;
       @include flex(center, center);
       flex-direction: column;
     }
-    .haeder-action__square {
+    .haeder-action--square {
       width: 60px;
       height: 25px;
     }
-    .haeder-action__square .haeder-action__icon {
+    .haeder-action--square .haeder-action--icon {
       width: 10px;
       height: 10px;
     }
-    .haeder-action__undo {
+    .haeder-action--undo {
       @include flex(center, center);
     }
-    .haeder-action__share {
+    .haeder-action--share {
       @include flex(center, center);
       width: 65px;
     }
-    .haeder-action__share .haeder-action__dropdown {
+    .haeder-action--dropdown {
       width: 10px;
       height: 25px;
       @include flex(center, center);
     }
-    .haeder-action__vision {
+    .haeder-action--vision {
       @include flex(center, center);
     }
-    .haeder-action__question {
+    .haeder-action--question {
       width: 20px;
       height: 20px;
     }
-    .haeder-action__more {
+    .haeder-action--more {
       width: 14px;
       height: 14px;
     }
@@ -57,22 +57,18 @@ header {
   .header-tools {
     .lnb {
       @include flex(flex-start, center);
-      .lnb__item {
+      .lnb__list {
         @include flex(flex-start, center);
       }
-      .lnb__item button {
+      .lnb__list button {
         @include flex(flex-start, center);
       }
-      .lnb__icon {
+      .lnb__list--icon {
         width: 17px;
         height: 17px;
         @include flex(center, center);
       }
-      .lnb__line {
-        width: 1px;
-        height: 15px;
-      }
-      .lnb__dropdown {
+      .lnb__list--dropdown {
         width: 6px;
         height: 15px;
         @include flex(center, center);

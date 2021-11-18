@@ -18,10 +18,10 @@
   padding-left: $a;
 }
 
-@mixin inactive() {
+@mixin inactive($a) {
   cursor: Default;
   opacity: 0.5;
-  background: none;
+  background-color: $a;
 }
 
 @mixin sectionTitle {
