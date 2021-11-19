@@ -1,0 +1,28 @@
+.sizelist {
+  padding: 15px 0 15px 15px;
+  .sizelist_mode {
+    font-size: 6px;
+    color: #777;
+    padding-bottom: 5px;
+    border-bottom: $border-eee;
+  }
+  .sizelist_mode .option {
+    padding: 0 15px 5px 0;
+  }
+  .sizelist_mode .option img {
+  }
+  .sizelist_wh {
+  }
+  .sizelist_wh li {
+    font-size: 6px;
+    color: #777;
+    margin-top: 8px;
+  }
+  .sizelist_wh li span {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    border-bottom: $border-eee;
+    padding: 5px 0;
+  }
+}

@@ -1,0 +1,70 @@
+header {
+  .header {
+    @include flex(space-between, center);
+  }
+  .header-title {
+    @include flex(flex-start, center);
+    .header__logo {
+      width: 25px;
+      height: 25px;
+    }
+    .header__menu {
+      .gnb {
+        @include flex(flex-start, center);
+      }
+    }
+  }
+  .haeder-action {
+    @include flex(flex-end, center);
+    .header-action__button {
+      @include flex(center, center);
+    }
+    .haeder-action--circle {
+      width: 25px;
+      height: 25px;
+      flex-direction: column;
+    }
+    .haeder-action--square {
+      width: 65px;
+      height: 25px;
+    }
+    .haeder-action--square .haeder-action--icon {
+      width: 10px;
+      height: 10px;
+    }
+    .haeder-action--dropdown {
+      width: 10px;
+      height: 25px;
+      @include flex(center, center);
+    }
+    .haeder-action--question {
+      width: 20px;
+      height: 20px;
+    }
+    .haeder-action--more {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .header-tools {
+    .lnb {
+      @include flex(flex-start, center);
+      .lnb__list {
+        @include flex(flex-start, center);
+      }
+      .lnb__list button {
+        @include flex(flex-start, center);
+      }
+      .lnb__icon {
+        width: 17px;
+        height: 17px;
+        @include flex(center, center);
+      }
+      .lnb__dropdown {
+        width: 6px;
+        height: 15px;
+        @include flex(center, center);
+      }
+    }
+  }
+}

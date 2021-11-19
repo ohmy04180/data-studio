@@ -1,0 +1,14 @@
+.gridsetting {
+  padding: 15px 0 15px 15px;
+  li {
+    font-size: 4px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  li span {
+    color: #333;
+    font-size: 14px;
+    border-bottom: $border-eee;
+    padding: 5px 0;
+  }
+}
