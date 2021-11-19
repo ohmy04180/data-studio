@@ -16,33 +16,25 @@ header {
   }
   .haeder-action {
     @include flex(flex-end, center);
+    .header-action__button {
+      @include flex(center, center);
+    }
     .haeder-action--circle {
       width: 25px;
       height: 25px;
-      @include flex(center, center);
       flex-direction: column;
     }
     .haeder-action--square {
-      width: 60px;
+      width: 65px;
       height: 25px;
     }
     .haeder-action--square .haeder-action--icon {
       width: 10px;
       height: 10px;
     }
-    .haeder-action--undo {
-      @include flex(center, center);
-    }
-    .haeder-action--share {
-      @include flex(center, center);
-      width: 65px;
-    }
     .haeder-action--dropdown {
       width: 10px;
       height: 25px;
-      @include flex(center, center);
-    }
-    .haeder-action--vision {
       @include flex(center, center);
     }
     .haeder-action--question {
@@ -63,12 +55,12 @@ header {
       .lnb__list button {
         @include flex(flex-start, center);
       }
-      .lnb__list--icon {
+      .lnb__icon {
         width: 17px;
         height: 17px;
         @include flex(center, center);
       }
-      .lnb__list--dropdown {
+      .lnb__dropdown {
         width: 6px;
         height: 15px;
         @include flex(center, center);

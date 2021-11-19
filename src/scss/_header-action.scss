@@ -24,7 +24,7 @@
     width: 100%;
   }
   .haeder-action--undo {
-    @include inactive(none);
+    @include inactive(transparent);
   }
   .haeder-action--share {
     color: cornflowerblue;
@@ -41,8 +41,6 @@
   .haeder-action--vision {
     background-color: cornflowerblue;
     color: #fff;
-  }
-  .haeder-action--line {
   }
   .haeder-action--question {
     @include btnStyle(none, none);

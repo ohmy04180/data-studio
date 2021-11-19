@@ -22,29 +22,32 @@
       margin: 0 2px;
       border-radius: 2px;
       font-size: 8px;
-      @include btnStyle(none, none);
+      @include btnStyle(transparent, none);
       &:hover {
         background: $hoverStyle;
       }
     }
-    .lnb__list--icon {
+    .lnb__list button.lnb__list--disable {
+      @include inactive(transparent);
+    }
+    .lnb__icon {
       padding: 3px;
       border-radius: 2px;
     }
-    .lnb__list--icon {
-      &.lnb__list--reverse {
+    .lnb__icon {
+      &.lnb__icon--reverse {
         transform: rotateY(180deg) scaleY(-1);
       }
     }
-    .lnb__list--icon img {
+    .lnb__icon img {
       vertical-align: top;
       width: 100%;
     }
-    .lnb__list--dropdown {
+    .lnb__dropdown {
       margin-left: 2px;
       padding-right: 2px;
     }
-    .lnb__list--dropdown img {
+    .lnb__dropdown img {
       width: 100%;
     }
   }

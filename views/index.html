@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="scss/index.css" rel="stylesheet">
+    <link href="../src/scss/index.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -15,81 +15,97 @@
                 <div class="header__menu">
                     <h2 class="header__title">[Sample] Google Anlytics Marketing Website 사본</h2>
                     <ul class="gnb">
-                        <!-- gnb__list--open 클래스 추가시 하위 gnb-sub 메뉴 노출 -->
-                        <li class="gnb__list gnb__list--open">
+                        <!-- gnb__sub--open 클래스 추가시 하위 gnb-sub 메뉴 노출 -->
+                        <li class="gnb__list">
                             <button>파일</button>
-                            <ul class="gnb-sub">
-                                <li class="gnb-sub__dropdown">
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
-                                    <button class="gnb-sub__dropdown--text">공유...</button>
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
+                            <ul class="gnb-sub gnb__sub--open">
+                                <li class="gnb-sub__list">
+                                    <button>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                        <span class="gnb-sub__text">공유...</span>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                    </button>                                    
                                 </li>
-                                <li class="gnb-sub__dropdown underline">
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
-                                    <button class="gnb-sub__dropdown--text">보고서 설정</button>
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
+                                <li class="gnb-sub__list">
+                                    <button class="underline">
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                        <span class="gnb-sub__text">보고서 설정</span>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                    </button>                                    
                                 </li>
-                                <li class="gnb-sub__dropdown"">
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="img/history.png" alt="">
-                                    </span>
-                                    <button class="gnb-sub__dropdown--text">버전 기록</button>
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="img/next.png" alt="">
-                                    </span>
+                                <li class="gnb-sub__list"">
+                                    <button>
+                                        <span class="gnb-sub__icon">
+                                            <img src="../src/img/history.png" alt="">
+                                        </span>
+                                        <span class="gnb-sub__text">버전 기록</span>
+                                        <span class="gnb-sub__icon">
+                                            <img src="../src/img/next.png" alt="">
+                                        </span>
+                                    </button>                                    
                                 </li>
-                                <li class="gnb-sub__dropdown"">
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
-                                    <button class="gnb-sub__dropdown--text">게시 설정</button>
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
+                                <li class="gnb-sub__list"">
+                                    <button>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                        <span class="gnb-sub__text">게시 설정</span>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                    </button>                                    
                                 </li>
-                                <li class="gnb-sub__dropdown"">
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
-                                    <button class="gnb-sub__dropdown--text">새 보고서</button>
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
+                                <li class="gnb-sub__list"">
+                                    <button>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                        <span class="gnb-sub__text">새 보고서</span>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                    </button>                                    
                                 </li>
-                                <li class="gnb-sub__dropdown"">
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
-                                    <button class="gnb-sub__dropdown--text">사본 만들기...</button>
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
+                                <li class="gnb-sub__list"">
+                                    <button>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                        <span class="gnb-sub__text">사본 만들기...</span>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                    </button>                                    
                                 </li>
-                                <li class="gnb-sub__dropdown underline">
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
-                                    <button class="gnb-sub__dropdown--text">다른 형식으로 다운로드</button>
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="img/next.png" alt="">
-                                    </span>
+                                <li class="gnb-sub__list">
+                                    <button class="underline">
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                        <span class="gnb-sub__text">다른 형식으로 다운로드</span>
+                                        <span class="gnb-sub__icon">
+                                            <img src="../src/img/next.png" alt="">
+                                        </span>
+                                    </button>                                    
                                 </li>
-                                <li class="gnb-sub__dropdown"">
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
-                                    <button class="gnb-sub__dropdown--text">보고서 삽입</button>
-                                    <span class="gnb-sub__dropdown--icon">
-                                        <img src="" alt="">
-                                    </span>
+                                <li class="gnb-sub__list"">
+                                    <button>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                        <span class="gnb-sub__text">보고서 삽입</span>
+                                        <span class="gnb-sub__icon">
+                                            <img src="" alt="">
+                                        </span>
+                                    </button>
                                 </li>                                
                             </ul>
                         </li>
@@ -104,149 +120,149 @@
                 </div>
             </div>
             <div class="haeder-action">
-                <button class="haeder-action--circle"></button>
-                <button class="haeder-action--square haeder-action--undo">
+                <button class=" header-action__button haeder-action--circle"></button>
+                <button class="header-action__button haeder-action--square haeder-action--undo">
                     <span class="haeder-action--icon">
-                        <img src="img/undo.png" alt="">
+                        <img src="../src/img/undo.png" alt="">
                     </span>                    
                     재설정
                 </button>
-                <button class="haeder-action--square haeder-action--share">
+                <button class="header-action__button haeder-action--square haeder-action--share">
                     <span class="haeder-action--icon">
-                        <img src="img/user.png" alt="">
+                        <img src="../src/img/user.png" alt="">
                     </span>
                     공유
                     <span class="haeder-action--dropdown">
-                        <img src="img/down.png" alt="">
+                        <img src="../src/img/down.png" alt="">
                     </span>
                 </button>
-                <button class="haeder-action--square haeder-action--vision">
+                <button class="header-action__button haeder-action--square">
                     <span class="haeder-action--icon">
-                        <img src="img/vision.png" alt="">
+                        <img src="../src/img/vision.png" alt="">
                     </span>
                     보기
                 </button>
-                <button class="haeder-action--circle">
+                <button class="header-action__button haeder-action--circle">
                     <span class="haeder-action--dots"></span>
                     <span class="haeder-action--dots"></span>
                     <span class="haeder-action--dots"></span>
                 </button>
                 <div class="sideline">                     
                     <button class="haeder-action--question">
-                        <img src="img/question.png" alt="">
+                        <img src="../src/img/question.png" alt="">
                     </button>
                     <button class="haeder-action--more">
-                        <img src="img/squares.png" alt="">
+                        <img src="../src/img/squares.png" alt="">
                     </button>                         
-                    <button class="haeder-action--circle""></button>
+                    <button class="header-action__button haeder-action--circle""></button>
                 </div>                
             </div>
         </div>         
         <div class="header-tools">
             <ul class="lnb">
                 <li class="lnb__list">
-                    <button>
-                        <span class="lnb__list--icon">
-                            <img src="img/undo.png" alt="">
+                    <button class="lnb__list--disable">
+                        <span class="lnb__icon">
+                            <img src="../src/img/undo.png" alt="">
                         </span>                    
                     </button>         
-                    <button>
-                        <span class="lnb__list--icon lnb__list--reverse">
-                            <img src="img/undo.png" alt="">
+                    <button class="lnb__list--disable">
+                        <span class="lnb__icon lnb__icon--reverse">
+                            <img src="../src/img/undo.png" alt="">
                         </span>                             
                     </button>               
                 </li>
                 <li class="lnb__list">
                     <button>
-                        <span class="lnb__list--icon">
-                            <img src="img/cursor.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/cursor.png" alt="">
                         </span>                                 
                     </button>           
                 </li>    
                 <li class="lnb__list">
                     <button>                        
-                        <span class="lnb__list--icon">
-                            <img src="img/page.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/page.png" alt="">
                         </span> 
                         Add page         
                     </button>          
                 </li>
                 <li class="lnb__list">
                     <button>                        
-                        <span class="lnb__list--icon">
-                            <img src="img/database.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/database.png" alt="">
                         </span>      
                         데이터 추가              
                     </button>
                 </li>
                 <li class="lnb__list">
                     <button>                        
-                        <span class="lnb__list--icon">
-                            <img src="img/chart.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/chart.png" alt="">
                         </span>
                         차트 추가
-                        <span class="lnb__list--dropdown">
-                            <img src="img/down.png" alt="">
+                        <span class="lnb__dropdown">
+                            <img src="../src/img/down.png" alt="">
                         </span>                        
                     </button>
                     <button>
-                        <span class="lnb__list--icon">
-                            <img src="img/line.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/line.png" alt="">
                         </span>
-                        <span class="lnb__list--dropdown">
-                            <img src="img/down.png" alt="">
+                        <span class="lnb__dropdown">
+                            <img src="../src/img/down.png" alt="">
                         </span>                        
                     </button>
                 </li>
                 <li class="lnb__list">
                     <button>                        
-                        <span class="lnb__list--icon">
-                            <img src="img/settings.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/settings.png" alt="">
                         </span>
                         컨트롤 추가
-                        <span class="lnb__list--dropdown">
-                            <img src="img/down.png" alt="">
+                        <span class="lnb__dropdown">
+                            <img src="../src/img/down.png" alt="">
                         </span>
                     </button>
                 </li>
                 <li class="lnb__list">                    
                     <button>
-                        <span class="lnb__list--icon lnb__list--reverse">
-                            <img src="img/next.png" alt="">
+                        <span class="lnb__icon lnb__reverse">
+                            <img src="../src/img/next.png" alt="">
                         </span>
                     </button>
                     <button>
-                        <span class="lnb__list--icon">
-                            <img src="img/next.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/next.png" alt="">
                         </span>                        
                     </button>
                     <button>
-                        <span class="lnb__list--icon">
-                            <img src="img/image.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/image.png" alt="">
                         </span>
-                        <span class="lnb__list--dropdown">
-                            <img src="img/down.png" alt="">
+                        <span class="lnb__dropdown">
+                            <img src="../src/img/down.png" alt="">
                         </span>                        
                     </button>
                     <button>
-                        <span class="lnb__list--icon">
-                            <img src="img/text.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/text.png" alt="">
                         </span>                        
                     </button>
                     <button>
-                        <span class="lnb__list--icon">
-                            <img src="img/line.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/line.png" alt="">
                         </span>
-                        <span class="lnb__list--dropdown">
-                            <img src="img/down.png" alt="">
+                        <span class="lnb__dropdown">
+                            <img src="../src/img/down.png" alt="">
                         </span>                        
                     </button>
                     <button>
-                        <span class="lnb__list--icon">
-                            <img src="img/shapes.png" alt="">
+                        <span class="lnb__icon">
+                            <img src="../src/img/shapes.png" alt="">
                         </span>
-                        <span class="lnb__list--dropdown">
-                            <img src="img/down.png" alt="">
+                        <span class="lnb__dropdown">
+                            <img src="../src/img/down.png" alt="">
                         </span>                        
                     </button>
                 </li>
@@ -272,7 +288,7 @@
                         <div class="modelist">
                             항상표시
                             <p class="option">
-                                <img src="img/down.png" alt="">
+                                <img src="../src/img/down.png" alt="">
                             </p>
                         </div>
                     </li>
@@ -281,7 +297,7 @@
                         <div class="modelist">
                             왼쪽
                             <p class="option">
-                                <img src="img/down.png" alt="">
+                                <img src="../src/img/down.png" alt="">
                             </p>
                         </div>
                     </li>
@@ -305,14 +321,14 @@
                 <div class="canvassize_title">
                     <span>캔버스크기</span>   
                     <p class="question">
-                        <img src="img/question.png" alt="">
+                        <img src="../src/img/question.png" alt="">
                     </p>  
                 </div>         
                 <div class="sizelist">
                     <div class="sizelist_mode">
                         US Letter(4:3)-세로모드
                         <p class="option">
-                            <img src="img/down.png" alt="">
+                            <img src="../src/img/down.png" alt="">
                         </p>
                     </div>
                     <ul class="sizelist_wh">

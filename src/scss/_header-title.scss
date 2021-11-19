@@ -19,9 +19,6 @@
       padding: 3px 5px;
       @include btnStyle(none, none);
     }
-    .gnb__list--open {
-      display: block;
-    }
     .gnb__list .gnb-sub {
       position: absolute;
       left: 0;
@@ -33,18 +30,22 @@
       width: max-content;
       display: none;
     }
-    .gnb__list .gnb-sub .gnb-sub__dropdown {
+    .gnb-sub.gnb__sub--open {
+      display: block;
+    }
+    .gnb__list .gnb-sub .gnb-sub__list button {
       @include flex(space-between, center);
       padding: 2px;
-      .gnb-sub__dropdown--icon {
+      width: 100%;
+      .gnb-sub__icon {
         width: 28px;
         height: 28px;
         padding: 10px;
       }
-      .gnb-sub__dropdown--icon img {
+      .gnb-sub__icon img {
         width: 100%;
       }
-      .gnb-sub__dropdown--text {
+      .gnb-sub__text {
         font-size: 12px;
         width: 100%;
         text-align: left;
