@@ -1,97 +1,15 @@
 main {
   @include flex(space-between, flex-start);
-  .section_left {
+
+  .workspace {
     width: 80%;
     height: 100vh;
-    @include flex(center, flex-start);
-    .blank {
-      width: 60%;
-      height: 80vh;
-    }
   }
-  .section--right {
+  .workspace-product {
+    width: 60%;
+    height: 80vh;
+  }
+  .sliding {
     width: 20%;
-    .section_option {
-      width: 100%;
-      @include flex(center, center);
-      li {
-        @include flex(center, center);
-        width: 50%;
-      }
-    }
-    .viewmode {
-      ul li .modelist {
-        @include flex(space-between, center);
-        width: 100%;
-      }
-      ul li .modelist .option {
-        width: 20px;
-      }
-      ul li .modelist .option img {
-        width: 100%;
-      }
-      ul li form {
-        @include flex(flex-start, center);
-        flex-wrap: wrap;
-      }
-      ul li form label {
-        width: 50%;
-        @include flex(flex-start, center);
-      }
-    }
-    .canvassize {
-      .canvassize_title {
-        @include flex(flex-start, center);
-        .question {
-          width: 15px;
-          height: 15px;
-        }
-        .question img {
-          width: 100%;
-        }
-      }
-    }
-    .sizelist {
-      .sizelist_mode {
-        @include flex(space-between, center);
-      }
-      .sizelist_mode .option {
-        width: 20px;
-      }
-      .sizelist_mode .option img {
-        width: 100%;
-      }
-      .sizelist_wh {
-        width: 100%;
-        @include flex(space-between, center);
-      }
-      .sizelist_wh li {
-        width: 45%;
-      }
-      .sizelist_wh li span {
-        display: block;
-        width: 100%;
-      }
-    }
-    .fitting {
-      form {
-        @include flex(space-between, center);
-      }
-      form label {
-        width: 45%;
-        @include flex(flex-start, center);
-      }
-    }
-    .gridsetting {
-      @include flex(space-between, center);
-      flex-wrap: wrap;
-      li {
-        width: 45%;
-      }
-      li span {
-        display: block;
-        width: 100%;
-      }
-    }
   }
 }

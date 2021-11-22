@@ -54,7 +54,7 @@
         border-bottom: $border-eee;
       }
       &:hover {
-        background-color: rgba($color: #eee, $alpha: 0.5);
+        background-color: $hoverStyle2;
       }
     }
   }

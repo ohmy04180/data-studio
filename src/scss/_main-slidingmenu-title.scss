@@ -1,14 +1,25 @@
-.section--right {
-  h3 {
-    font-weight: 500;
-    font-size: 14px;
-    padding: 10px;
+.sliding-title {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: $border-eee;
+}
+.sliding-option {
+  width: 100%;
+  @include flex(center, center);
+  .sliding-option__list {
+    @include flex(center, center);
+    width: 50%;
     border-bottom: $border-eee;
   }
-  .sectionbox {
-    @include sectionBox;
-    span {
-      @include sectionTitle;
-    }
+  .sliding-option__list button {
+    @include btnStyle(none, none);
+    padding: 10px 0;
+    font-size: 8px;
+    text-align: center;
+  }
+  .sliding-option__list.sliding-option__list--selected {
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
   }
 }

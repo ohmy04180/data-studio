@@ -1,0 +1,53 @@
+.sliding-box {
+  @include sectionBox;
+  .sliding-subtitle {
+    @include sectionTitle;
+  }
+  .selector-container {
+    padding: 5px 0;
+    .selector-container__title {
+      width: 100%;
+      font-size: 8px;
+    }
+    .selector-container__button {
+      width: 100%;
+      @include btnStyle(transparent, none);
+      @include flex(space-between, center);
+      border-bottom: $border-eee;
+      .selector-container__subtitle {
+        width: 90%;
+        text-align: left;
+        font-size: 8px;
+        padding: 5px 0 5px 5px;
+      }
+      .selector-container__icon {
+        width: 10%;
+      }
+      .selector-container__icon img {
+        width: 30%;
+      }
+    }
+    .selector-container__option {
+      display: none;
+      width: 100%;
+      border: $border-eee;
+      margin: 4px 0;
+      .selector-container__list {
+      }
+      .selector-container__list button {
+        font-size: 8px;
+        line-height: 3;
+        text-align: left;
+        width: 100%;
+        padding-left: 10px;
+        @include btnStyle(transparent, none);
+      }
+      .selector-container__list button:hover {
+        background-color: $hoverStyle2;
+      }
+      &.selector-container__option--open {
+        display: block;
+      }
+    }
+  }
+}

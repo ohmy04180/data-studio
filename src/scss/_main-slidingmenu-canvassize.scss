@@ -1,16 +1,42 @@
-.canvassize {
+.sliding-box {
   padding-bottom: 20px;
-  .canvassize_title {
+  .sliding-canvassize-title {
+    @include flex(flex-start, center);
     span {
       margin-right: 10px;
     }
-    .question {
+    .sliding-subtitle__icon {
+      width: 15px;
+      height: 15px;
       border-radius: 100%;
       background-color: rgba($color: #eee, $alpha: 0.3);
     }
-    .question img {
+    .sliding-subtitle__icon img {
+      width: 100%;
       vertical-align: top;
       opacity: 0.2;
+    }
+  }
+  .size {
+    width: 100%;
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    padding-left: 5px;
+    .size__list {
+      width: 45%;
+      padding: 5px 0;
+      label {
+        font-size: 8px;
+        width: 100%;
+      }
+      input {
+        border: none;
+        border-bottom: $border-eee;
+        width: 100%;
+        padding-left: 5px;
+        line-height: 2.5;
+        outline-style: none;
+      }
     }
   }
 }

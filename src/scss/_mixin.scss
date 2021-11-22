@@ -29,7 +29,7 @@
   font-size: 8px;
 }
 @mixin sectionBox {
-  padding: 10px 0 0 20px;
+  padding: 10px 0 10px 20px;
   border-bottom: 1px solid #eee;
 }
 @mixin sectionInPadding {
@@ -40,4 +40,8 @@ $border-eee: 1px solid #eee;
 $hoverStyle: rgba(
   $color: cornflowerblue,
   $alpha: 0.3,
+);
+$hoverStyle2: rgba(
+  $color: #eee,
+  $alpha: 0.5,
 );
