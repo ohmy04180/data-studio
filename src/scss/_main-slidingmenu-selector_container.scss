@@ -1,14 +1,10 @@
-.sliding-box {
-  @include sectionBox;
-  .sliding-subtitle {
-    @include sectionTitle;
+.selector-container {
+  padding: 5px 0;
+  .selector-container__title {
+    width: 100%;
+    font-size: 8px;
   }
-  .selector-container {
-    padding: 5px 0;
-    .selector-container__title {
-      width: 100%;
-      font-size: 8px;
-    }
+  .selector-container__select {
     .selector-container__button {
       width: 100%;
       @include btnStyle(transparent, none);
@@ -27,14 +23,12 @@
         width: 30%;
       }
     }
-    .selector-container__option {
+    .selector-option__list {
       display: none;
       width: 100%;
       border: $border-eee;
       margin: 4px 0;
-      .selector-container__list {
-      }
-      .selector-container__list button {
+      .selector-option__item button {
         font-size: 8px;
         line-height: 3;
         text-align: left;
@@ -42,10 +36,10 @@
         padding-left: 10px;
         @include btnStyle(transparent, none);
       }
-      .selector-container__list button:hover {
+      .selector-option__item button:hover {
         background-color: $hoverStyle2;
       }
-      &.selector-container__option--open {
+      &.selector-option__list--open {
         display: block;
       }
     }

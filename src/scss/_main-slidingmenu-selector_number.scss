@@ -1,0 +1,26 @@
+.sliding-box {
+  // padding-bottom: 20px;
+
+  .size__list {
+    width: 100%;
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    padding-left: 5px;
+    .size__item {
+      width: 45%;
+      padding: 5px 0;
+      label {
+        font-size: 8px;
+        width: 100%;
+      }
+      input {
+        border: none;
+        border-bottom: $border-eee;
+        width: 100%;
+        padding-left: 5px;
+        line-height: 2.5;
+        outline-style: none;
+      }
+    }
+  }
+}
