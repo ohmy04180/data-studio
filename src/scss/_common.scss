@@ -13,9 +13,13 @@ h2,
 span,
 div,
 p,
-span {
+span,
+button,
+input,
+label {
   letter-spacing: -0.5px;
+  color: #777;
 }
 img {
-  vertical-align: top;
+  // vertical-align: top;
 }

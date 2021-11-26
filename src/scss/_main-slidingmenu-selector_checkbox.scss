@@ -1,0 +1,68 @@
+.selector-selectbox {
+  font-size: 8px;
+  @include flex(space-between, center);
+  .selector-selectbox__common {
+    padding-left: 20px;
+    position: relative;
+    width: 45%;
+    input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+    label {
+      cursor: pointer;
+    }
+    label::before {
+      content: "";
+      clear: both;
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      background-color: #fff;
+      border: $border-eee;
+    }
+    label::after {
+      content: "";
+      clear: both;
+      display: block;
+      position: absolute;
+      cursor: pointer;
+    }
+    input:checked + label::before {
+      background-color: cornflowerblue;
+      border: none;
+    }
+  }
+  .checkbox {
+    label::after {
+      left: 5px;
+      top: 1px;
+      width: 4px;
+      height: 8px;
+      border: 2px solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+  .radio {
+    margin: 10px 0;
+    label::before {
+      left: -1px;
+      border-radius: 50%;
+    }
+    label::after {
+      left: 4px;
+      top: 4px;
+      width: 7px;
+      height: 7px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+}

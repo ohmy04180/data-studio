@@ -1,24 +1,32 @@
 .sizelist {
   padding: 15px 0 15px 15px;
   .sizelist_mode {
+    @include flex(space-between, center);
     font-size: 6px;
     color: #777;
     padding-bottom: 5px;
     border-bottom: $border-eee;
   }
   .sizelist_mode .option {
+    width: 20px;
     padding: 0 15px 5px 0;
   }
   .sizelist_mode .option img {
+    width: 100%;
   }
   .sizelist_wh {
+    width: 100%;
+    @include flex(space-between, center);
   }
   .sizelist_wh li {
+    width: 45%;
     font-size: 6px;
     color: #777;
     margin-top: 8px;
   }
   .sizelist_wh li span {
+    display: block;
+    width: 100%;
     display: block;
     color: #333;
     font-size: 14px;
