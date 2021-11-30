@@ -1,15 +1,19 @@
 main {
   @include flex(space-between, flex-start);
-
+  overflow-y: auto;
+  height: 100%;
   .workspace {
     width: 80%;
-    height: 100vh;
+    height: 100%;
+    overflow-y: auto;
   }
   .workspace-product {
     width: 60%;
-    height: 80vh;
+    height: 1000px;
   }
   .sliding {
     width: 20%;
+    height: 100%;
+    overflow-y: auto;
   }
 }

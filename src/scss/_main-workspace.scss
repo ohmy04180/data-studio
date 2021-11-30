@@ -1,7 +1,7 @@
 .workspace {
   background-color: #eee;
-  overflow-y: scroll;
-  padding-top: 20px;
+  // overflow-y: scroll;
+  padding: 20px;
   @include flex(center, flex-start);
   .workspace-product {
     background-color: aliceblue;

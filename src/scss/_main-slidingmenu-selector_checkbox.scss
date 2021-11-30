@@ -2,7 +2,7 @@
   font-size: 8px;
   @include flex(space-between, center);
   .selector-selectbox__common {
-    padding-left: 20px;
+    padding-left: 25px;
     position: relative;
     width: 45%;
     input {
@@ -13,6 +13,7 @@
     }
     label {
       cursor: pointer;
+      line-height: 2;
     }
     label::before {
       content: "";
@@ -53,11 +54,10 @@
   .radio {
     margin: 10px 0;
     label::before {
-      left: -1px;
       border-radius: 50%;
     }
     label::after {
-      left: 4px;
+      left: 5px;
       top: 4px;
       width: 7px;
       height: 7px;

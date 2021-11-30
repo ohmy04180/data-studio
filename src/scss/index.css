@@ -24,6 +24,28 @@ label {
   color: #777;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  background: #fff;
+}
+
 header .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,26 +486,30 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow-y: auto;
+  height: 100%;
 }
 
 main .workspace {
   width: 80%;
-  height: 100vh;
+  height: 100%;
+  overflow-y: auto;
 }
 
 main .workspace-product {
   width: 60%;
-  height: 80vh;
+  height: 1000px;
 }
 
 main .sliding {
   width: 20%;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .workspace {
   background-color: #eee;
-  overflow-y: scroll;
-  padding-top: 20px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,7 +659,7 @@ main .sliding {
 }
 
 .selector-selectbox .selector-selectbox__common {
-  padding-left: 20px;
+  padding-left: 25px;
   position: relative;
   width: 45%;
 }
@@ -647,6 +673,7 @@ main .sliding {
 
 .selector-selectbox .selector-selectbox__common label {
   cursor: pointer;
+  line-height: 2;
 }
 
 .selector-selectbox .selector-selectbox__common label::before {
@@ -692,12 +719,11 @@ main .sliding {
 }
 
 .selector-selectbox .radio label::before {
-  left: -1px;
   border-radius: 50%;
 }
 
 .selector-selectbox .radio label::after {
-  left: 4px;
+  left: 5px;
   top: 4px;
   width: 7px;
   height: 7px;

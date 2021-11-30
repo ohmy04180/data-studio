@@ -20,6 +20,14 @@ label {
   letter-spacing: -0.5px;
   color: #777;
 }
-img {
-  // vertical-align: top;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+.wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
